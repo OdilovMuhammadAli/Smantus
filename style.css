@@ -6,10 +6,17 @@
 }
 
 body {
-  background: linear-gradient(to right, #000000, #000317, #000000);
   color: white;
   font-family: "Bungee";
   background-color: #000212;
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #000000, #4d4d4d, #090319, #04003b);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+  transition: background 0.5s;
 }
 
 .container {
@@ -133,11 +140,11 @@ body {
 
 .nft-grid {
   display: flex;
-  gap: 100px;
+  gap: 50px;
 }
 
 .nft-card img {
-  width: 350px;
+  width: 230px;
 }
 
 .nft-card p {
@@ -187,4 +194,34 @@ body {
 
 .footer-icons img {
   width: 25px;
+}
+
+.scroll-block {
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 80px;
+}
+
+.arrow-down {
+  font-size: 60px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.projects-heading {
+  font-size: 32px;
+  letter-spacing: 6px;
+  color: #d4af37;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
