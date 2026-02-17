@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #000000, #000317, #000000);
+  color: white;
+  font-family: "Bungee";
+}
+
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: #d4af37;
+}
+
+.dark-btn {
+  background: none;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+  color: #d4af37;
+  font-weight: 400;
+}
+
+.hero-text h1 {
+  font-size: 70px;
+  letter-spacing: 10px;
+  margin: 15px 0;
+}
+
+.hero-text p {
+  color: #aaa;
+  max-width: 500px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-outline {
+  padding: 12px 30px;
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+.btn-gold {
+  padding: 14px;
+  background: #d4af37;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 520px;
+}
+
+.nft {
+  padding: 10px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  color: #d4af37;
+}
+
+.nft-grid {
+  display: flex;
+  gap: 100px;
+}
+
+.nft-card img {
+  width: 350px;
+}
+
+.nft-card p {
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.contribution {
+  padding: 80px 0;
+}
+
+.contribution-box {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.contribution-img img {
+  width: 500px;
+}
+
+.contribution-text h2 {
+  font-size: 32px;
+  color: #d4af37;
+}
+
+.contribution-text p {
+  margin: 15px 0 25px 0;
+  color: #ccc;
+}
+
+.footer {
+  padding: 80px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.footer-icons img {
+  width: 25px;
+}
