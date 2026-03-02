@@ -225,3 +225,72 @@ body {
     background-position: 0% 50%;
   }
 }
+body {
+  background: linear-gradient(-45deg, #000, #0d0d2b, #090319, #04003b);
+  background-size: 400% 400%;
+  animation: gradBG 8s ease infinite;
+  background-color: #090319;
+}
+@keyframes gradBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #d4af37;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.gold-text {
+  background: linear-gradient(135deg, #fff 40%, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.on {
+  opacity: 1;
+  transform: none;
+}
+.reveal-r {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-r.on {
+  opacity: 1;
+  transform: none;
+}
+.nft-card:hover img {
+  transform: scale(1.06);
+}
+.proj-overlay {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.proj-card:hover .proj-overlay {
+  opacity: 1;
+}
+.proj-card:hover img {
+  transform: scale(1.08);
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
